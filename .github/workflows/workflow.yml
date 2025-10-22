@@ -23,7 +23,7 @@ jobs:
 
       - name: Lint with flake8
         run: |
-          flake8 service --count --max-line-length=120 --select=E9,F63,F7,F82 --ignore=E501 --show-source --statistics
+          flake8 service --count --max-line-length=120 --select=E9,F63,F7,F82 --show-source --statistics
           flake8 service --count --max-line-length=127 --max-complexity=10 --ignore=E501 --statistics
 
       - name: Run unit tests with nose
